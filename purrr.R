@@ -11,3 +11,5 @@ for (i in 2:5) {
 result <- tibble(segment = 2:5) %>% 
   mutate(kmean = purrr::map(.x = segment,
                             .f = ~kmeans(mtcars, .x))) 
+
+
